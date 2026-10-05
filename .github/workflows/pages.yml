@@ -1,0 +1,57 @@
+# Builds the Jekyll site on the self-hosted Raspberry Pi runner and publishes it
+# to GitHub Pages. Requires Settings → Pages → Source: "GitHub Actions".
+name: Build and deploy
+
+on:
+  # Only pushes to main. No pull_request trigger: the repo is public, and a PR
+  # from a fork must never be able to run code on the Raspberry Pi.
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time; a newer push waits instead of cancelling a running deploy
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: [self-hosted, Linux, ARM64]
+    # Ruby + build tools come from the image, so the Pi only needs Docker
+    container: ruby:3.3
+    env:
+      JEKYLL_ENV: production
+      BUNDLE_PATH: vendor/bundle
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Cache gems
+        uses: actions/cache@v4
+        with:
+          path: vendor/bundle
+          key: gems-${{ runner.arch }}-${{ hashFiles('Gemfile') }}
+
+      - name: Install gems
+        run: bundle install --jobs 4
+
+      - name: Build
+        run: bundle exec jekyll build
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: [self-hosted, Linux, ARM64]
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
