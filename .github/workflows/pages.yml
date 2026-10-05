@@ -1,5 +1,9 @@
 # Builds the Jekyll site on the self-hosted Raspberry Pi runner and publishes it
 # to GitHub Pages. Requires Settings → Pages → Source: "GitHub Actions".
+#
+# Pushes to main always use the Raspberry Pi. If the Pi is offline, start the
+# workflow by hand (Actions → Build and deploy → Run workflow) and pick "github"
+# to build once on GitHub's own machines instead.
 name: Build and deploy
 
 on:
@@ -8,6 +12,14 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      runner:
+        description: Where to build
+        type: choice
+        options:
+          - raspberry-pi
+          - github
+        default: raspberry-pi
 
 permissions:
   contents: read
@@ -21,7 +33,7 @@ concurrency:
 
 jobs:
   build:
-    runs-on: [self-hosted, Linux, ARM64]
+    runs-on: ${{ inputs.runner == 'github' && 'ubuntu-latest' || fromJSON('["self-hosted", "Linux", "ARM64"]') }}
     # Ruby + build tools come from the image, so the Pi only needs Docker
     container: ruby:3.3
     env:
@@ -48,7 +60,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: [self-hosted, Linux, ARM64]
+    runs-on: ${{ inputs.runner == 'github' && 'ubuntu-latest' || fromJSON('["self-hosted", "Linux", "ARM64"]') }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
