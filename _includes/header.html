@@ -1,0 +1,48 @@
+<header id="site-header" class="minimal-header has-social has-header-media effect-one clr" data-height="100" itemscope="itemscope" itemtype="https://schema.org/WPHeader" role="banner">
+
+			<div id="site-header-inner" class="clr container">
+
+<div id="site-logo" class="clr" itemscope itemtype="https://schema.org/Brand" >
+
+	<div id="site-logo-inner" class="clr">
+
+		<a href="/" class="custom-logo-link" rel="home"{% if page.url == '/' %} aria-current="page"{% endif %}><img width="768" height="234" src="/media/2021/08/cropped-Foto-30.12.20-20-24-22-768x234.webp" class="custom-logo" alt="{{ site.title }}" decoding="async" fetchpriority="high" srcset="/media/2021/08/cropped-Foto-30.12.20-20-24-22-300x92.webp 300w, /media/2021/08/cropped-Foto-30.12.20-20-24-22-768x234.webp 768w" sizes="286px" /></a>
+	</div><!-- #site-logo-inner -->
+
+</div><!-- #site-logo -->
+
+{% include social-menu.html %}
+			<div id="site-navigation-wrap" class="clr">
+
+			<nav id="site-navigation" class="navigation main-navigation clr" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" role="navigation" >
+
+				<ul id="menu-main-menu" class="main-menu dropdown-menu sf-menu">{% include menu-items.html %}</ul>
+			</nav><!-- #site-navigation -->
+
+					</div><!-- #site-navigation-wrap -->
+
+	<div class="oceanwp-mobile-menu-icon clr mobile-right">
+
+		<a href="{% if page.url != '/' %}/{% endif %}#mobile-menu-toggle" class="mobile-menu"  aria-label="Mobiles Menü">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+								<span class="oceanwp-text">Menü</span>
+				<span class="oceanwp-close-text">Schließen</span>
+						</a>
+
+	</div><!-- #oceanwp-mobile-menu-navbar -->
+
+			</div><!-- #site-header-inner -->
+
+<div id="mobile-dropdown" class="clr" >
+
+	<nav class="clr has-social" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+
+		<ul id="menu-main-menu-1" class="menu">{% include menu-items.html mobile=true %}</ul>
+{% include social-menu.html %}
+	</nav>
+
+</div>
+
+					<div class="overlay-header-media"></div>
+
+</header><!-- #site-header -->

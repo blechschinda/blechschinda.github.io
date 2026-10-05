@@ -1,0 +1,20 @@
+{%- comment -%}
+  Renders the main menu items. Pass include.mobile=true for the mobile dropdown markup.
+{%- endcomment -%}
+{%- for item in site.data.navigation -%}
+  {%- if item.anchor -%}
+    {%- if page.url == '/' -%}{%- assign href = '#' | append: item.anchor -%}{%- else -%}{%- assign href = '/#' | append: item.anchor -%}{%- endif -%}
+    {%- assign extra = 'local-scroll menu-item menu-item-type-custom menu-item-object-custom' -%}
+  {%- else -%}
+    {%- assign href = item.url -%}
+    {%- assign extra = 'menu-item menu-item-type-post_type menu-item-object-page' -%}
+    {%- if item.url == '/' -%}{%- assign extra = extra | append: ' menu-item-home' -%}{%- endif -%}
+  {%- endif -%}
+  {%- assign current = false -%}
+  {%- if item.url and item.url == page.url -%}{%- assign current = true -%}{%- endif -%}
+  {%- if include.mobile -%}
+<li class="{{ extra }}{% if current %} current-menu-item current_page_item{% endif %} menu-item-{{ item.id }}"><a href="{{ href }}"{% if current %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+{% else -%}
+<li id="menu-item-{{ item.id }}" class="{{ extra }}{% if current %} current-menu-item current_page_item{% endif %} menu-item-{{ item.id }}"><a href="{{ href }}" class="menu-link"><span class="text-wrap">{{ item.title }}</span></a></li>
+  {%- endif -%}
+{%- endfor -%}

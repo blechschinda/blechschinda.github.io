@@ -1,0 +1,34 @@
+title: Blechschinda
+tagline: Bayerisch-böhmische Blasmusik aus Niederlindhart
+description: >-
+  Die Blechschinda aus Niederlindhart spielen bayerisch-böhmische Blasmusik in
+  flexibler Besetzung von 6 bis 10 Musikanten – auf Volksfesten, Festumzügen,
+  Hochzeiten und Geburtstagen.
+url: https://blechschinda.de
+baseurl: ""
+lang: de
+
+email: info@blechschinda.de
+facebook: https://www.facebook.com/Blechschinda
+instagram: https://www.instagram.com/blechschinda/
+og_image: /media/2022/04/AJE_9007-1536x1022.webp
+
+timezone: Europe/Berlin
+permalink: pretty
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules

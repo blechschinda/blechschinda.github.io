@@ -1,0 +1,21 @@
+# Main menu (desktop + mobile).
+# "anchor" items point to a section on the home page; on the home page itself
+# they become plain "#..." links so the page scrolls instead of reloading.
+- title: Home
+  url: /
+  id: 448
+- title: Über uns
+  anchor: About
+  id: 449
+- title: Musikanten
+  anchor: Musikanten
+  id: 451
+- title: Auftritte
+  url: /auftritte/
+  id: 699
+- title: Galerie
+  url: /galerie/
+  id: 452
+- title: Kontakt
+  anchor: Kontakt
+  id: 453
