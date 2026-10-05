@@ -1,0 +1,52 @@
+---
+# Summary of the website for AI assistants (https://llmstxt.org).
+# Gigs, musicians and contact data are filled in from _data/ and _config.yml.
+layout: null
+permalink: /llms.txt
+sitemap: false
+---
+# {{ site.title }}
+
+> {{ site.title }} ist eine Blaskapelle aus Niederlindhart (Mallersdorf-Pfaffenberg, Landkreis Straubing-Bogen) in Niederbayern. Wir spielen bayerisch-böhmische Blasmusik in flexibler Besetzung von 6 bis 10 Musikanten – auf Hochzeiten, Geburtstagen, Volksfesten, Vereinsfesten, Gründungsfesten und Festumzügen. Wir spielen in ganz Niederbayern und darüber hinaus, unter anderem in Straubing, Landshut, Regensburg, Nürnberg und München. Anfragen: {{ site.email }}
+
+## Auf einen Blick
+
+- Musikrichtung: bayerisch-böhmische Blasmusik
+- Besetzung: 6 bis 10 Musikanten (Flügelhorn, Trompete, Tenorhorn, Bariton, Tuba, Klarinette, Posaune, Schlagzeug), je nach Wunsch des Veranstalters
+- Anlässe: Hochzeiten, Geburtstage, Volksfeste, Vereinsfeste, Gründungsfeste, Festumzüge, Starkbierfeste, Maibaumaufstellen
+- Heimatort: Niederlindhart, 84066 Mallersdorf-Pfaffenberg, Landkreis Straubing-Bogen, Niederbayern
+- Einsatzgebiet: Niederbayern und darüber hinaus, u. a. Straubing, Landshut, Regensburg, Nürnberg und München
+
+## Kontakt und Buchung
+
+- E-Mail: {{ site.email }}
+{%- for tel in site.kontakt.telefon %}
+- Telefon ({{ tel.name }}): {{ tel.anzeige }}
+{%- endfor %}
+- Ansprechpartner: {{ site.kontakt.name }}, {{ site.kontakt.strasse }}, {{ site.kontakt.plz }} {{ site.kontakt.ort }}
+- Facebook: {{ site.facebook }}
+- Instagram: {{ site.instagram }}
+
+## Seiten
+
+- [Startseite]({{ '/' | absolute_url }}): Über uns, Musikanten, Kontakt
+- [Auftritte]({{ '/auftritte/' | absolute_url }}): Termine der aktuellen Saison
+- [Galerie]({{ '/galerie/' | absolute_url }}): Fotos von Auftritten, Festen und Fotoshootings
+- [Downloads]({{ '/downloads/' | absolute_url }}): Logo und Gruppenfotos in hoher Auflösung für Presse und Veranstalter
+- [Impressum]({{ '/impressum/' | absolute_url }})
+
+## Über uns
+
+Die Wurzeln der Kapelle liegen in Niederlindhart. Das dort jährlich stattfindende Stadlfest wurde zuerst von den Bläsern der Enzianschützen musikalisch umrahmt; daraus entwickelte sich Schritt für Schritt die Kapelle „Blechschinda“. Zwei Klarinetten („Holzhexen“), Schlagzeug und Posaune ergänzen die Blechbesetzung. Ob Poolparty oder Scheidungsfeier – die Blechschinda verleihen jedem Fest eine besondere Note.
+
+## Musikanten
+
+{% for m in site.data.musikanten -%}
+- {{ m.name }} – {{ m.instrument }}
+{% endfor %}
+## Auftritte {{ site.data.auftritte.jahr }}
+
+{% for t in site.data.auftritte.termine -%}
+- {{ t.datum | date: "%d.%m.%Y" }}: {{ t.name }}
+{% endfor %}
+Aktuelle Termine: {{ '/auftritte/' | absolute_url }}
