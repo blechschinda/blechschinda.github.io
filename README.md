@@ -75,7 +75,7 @@ bump `last_modified_at` in its front matter.
 When adding photos, convert them to WebP first and keep them under ~500 KB:
 
 ```sh
-cwebp -q 82 -m 6 -resize 2048 0 input.jpg -o media/2026/01/name.webp
+cwebp -q 82 -m 6 -resize 2048 0 input.jpg -o media/name.webp
 ```
 
 ## Previewing locally

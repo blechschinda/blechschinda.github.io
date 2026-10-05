@@ -42,7 +42,7 @@ body {
   font-size: 1.0625rem;
   line-height: 1.7;
   color: var(--ink);
-  background: var(--page) url(/media/2021/08/background.webp) center / cover fixed;
+  background: var(--page) url(/media/background.webp) center / cover fixed;
   -webkit-font-smoothing: antialiased;
 }
 
