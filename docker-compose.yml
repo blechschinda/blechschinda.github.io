@@ -1,0 +1,11 @@
+# Local preview: `docker compose up`, then open http://localhost:4000/
+services:
+  jekyll:
+    build: .
+    image: blechschinda-jekyll
+    container_name: blechschinda-preview
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+    volumes:
+      - .:/site

@@ -1,62 +1,15 @@
 <!DOCTYPE html>
-<html class="html" lang="de">
+<html lang="de">
 {% include head.html %}
-
-<body class="{{ page.body_class }} wp-custom-logo wp-embed-responsive oceanwp-theme dropdown-mobile no-header-border default-breakpoint {% if page.url == '/' %}content-full-screen{% else %}content-full-width content-max-width{% endif %} page-header-disabled has-breadcrumbs has-fixed-footer{% if page.url == '/' %} no-margins{% endif %} elementor-default elementor-kit-4 elementor-page{% if page.elementor_id %} elementor-page-{{ page.elementor_id }}{% endif %}" itemscope="itemscope" itemtype="https://schema.org/WebPage">
-
-	<div id="outer-wrap" class="site clr">
-
-		<a class="skip-link screen-reader-text" href="#main">Zum Inhalt springen</a>
-
-		<div id="wrap" class="clr">
-
+<body class="{% if page.url == '/' %}is-home{% endif %}">
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
 {% include header.html %}
 
-			<main id="main" class="site-main clr"  role="main">
-
-	<div id="content-wrap" class="container clr">
-
-		<div id="primary" class="content-area clr">
-
-			<div id="content" class="site-content clr">
-
-<article class="single-page-article clr">
-
-<div class="entry clr" itemprop="text">
-
+<main id="main">
 {{ content }}
-</div>
-
-</article>
-
-			</div><!-- #content -->
-
-		</div><!-- #primary -->
-
-	</div><!-- #content-wrap -->
-
-	</main><!-- #main -->
+</main>
 
 {% include footer.html %}
-
-</div><!-- #wrap -->
-
-</div><!-- #outer-wrap -->
-
-<a aria-label="Zum Seitenanfang scrollen" href="#" id="scroll-top" class="scroll-top-right"><i class=" fa fa-angle-double-up" aria-hidden="true" role="img"></i></a>
-
-<script id='oceanwp-main-js-extra'>
-var oceanwpLocalize = {"isRTL":"","menuSearchStyle":"disabled","mobileMenuSearchStyle":"disabled","sidrSource":null,"sidrDisplace":"1","sidrSide":"left","sidrDropdownTarget":"link","verticalHeaderTarget":"link","customScrollOffset":"0","customSelects":""};
-</script>
-<script src='/assets/oceanwp/js/theme.min.js' id='oceanwp-main-js'></script>
-<script src='/assets/oceanwp/js/drop-down-mobile-menu.min.js' id='oceanwp-drop-down-mobile-menu-js'></script>
-<script src='/assets/oceanwp/js/scroll-top.min.js' id='oceanwp-scroll-top-js'></script>
-<script src='/assets/elementor/js/webpack.runtime.min.js' id='elementor-webpack-runtime-js'></script>
-<script src='/assets/elementor/js/frontend-modules.min.js' id='elementor-frontend-modules-js'></script>
-<script src='/assets/elementor/lib/waypoints/waypoints.min.js' id='elementor-waypoints-js'></script>
-<script id='elementor-frontend-js-before'>
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Auf Facebook teilen","shareOnTwitter":"Auf Twitter teilen","pinIt":"Anheften","download":"Download","downloadImage":"Bild downloaden","fullscreen":"Vollbild","zoom":"Zoom","share":"Teilen","playVideo":"Video abspielen","previous":"Zurück","next":"Weiter","close":"Schließen"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobil","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobil Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Breitbild","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.8.1","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"e_import_export":true,"e_hidden_wordpress_widgets":true,"landing-pages":true,"elements-color-picker":true,"favorite-widgets":true,"admin-top-bar":true},"urls":{"assets":"\/assets\/elementor\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":{{ page.elementor_id | default: 0 }},"title":"{{ page_title | uri_escape }}","excerpt":"","featuredImage":false}};
-</script>
-<script src='/assets/elementor/js/frontend.min.js' id='elementor-frontend-js'></script>
+<script src="/assets/js/site.js" defer></script>
 </body>
 </html>

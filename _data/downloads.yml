@@ -1,0 +1,27 @@
+# Files on /downloads/. The files themselves live in /downloads/.
+# vorschau: small image shown on the page; datei: the file that is downloaded.
+# hintergrund (logos): transparent | blau – background of the preview tile.
+paket: /downloads/blechschinda-pressepaket.zip
+
+logos:
+  - titel: Logo (transparent)
+    info: PNG · 3402 × 1065 px · für helle und dunkle Hintergründe
+    datei: /downloads/blechschinda-logo.png
+    vorschau: /media/logo/blechschinda-logo-600.webp
+    hintergrund: transparent
+  - titel: Logo auf Blau
+    info: PNG · 4146 × 1809 px
+    datei: /downloads/blechschinda-logo-dunkel.png
+    vorschau: /media/logo/blechschinda-logo-600.webp
+    hintergrund: blau
+
+gruppenfotos:
+  - datei: /downloads/blechschinda-gruppe-1.jpg
+    vorschau: /media/2022/04/AJE_9136-768x511.webp
+    info: JPG · 1920 × 1278 px
+  - datei: /downloads/blechschinda-gruppe-2.jpg
+    vorschau: /media/2022/04/AJE_8134-768x511.webp
+    info: JPG · 2048 × 1363 px
+  - datei: /downloads/blechschinda-gruppe-3.jpg
+    vorschau: /media/2022/04/10_Shooting-768x511.webp
+    info: JPG · 2048 × 1362 px

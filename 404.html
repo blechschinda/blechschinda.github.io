@@ -4,33 +4,20 @@ description: Diese Seite gibt es nicht (mehr). Zurück zur Startseite der Blechs
 permalink: /404.html
 noindex: true
 sitemap: false
-body_class: page-template-default page
-head_style: |
-  .elementor-heading-title{padding:0;margin:0;line-height:1.2;color:#020101}
-  .elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}
-  .elementor-widget-text-editor ul{margin:1em 0 0 1.2em;line-height:2}
+eyebrow: Fehler 404
 ---
-<div data-elementor-type="wp-page" class="elementor">
-				<section class="elementor-section elementor-top-section elementor-section-boxed elementor-section-height-default">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-widget elementor-widget-heading">
-				<div class="elementor-widget-container">
-			<h1 class="elementor-heading-title elementor-size-xl">Seite nicht gefunden</h1>		</div>
-				</div>
-				<div class="elementor-element elementor-widget elementor-widget-text-editor">
-				<div class="elementor-widget-container">
-			<p>Diese Seite gibt es leider nicht (mehr). Vielleicht finden Sie hier, was Sie suchen:</p>
-<ul>
-<li><a href="/">Startseite</a></li>
-<li><a href="/auftritte/">Auftritte</a></li>
-<li><a href="/galerie/">Galerie</a></li>
-<li><a href="/#Kontakt">Kontakt</a></li>
-</ul>
-				</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
+{% include page-banner.html %}
+
+<section class="section">
+  <div class="container narrow">
+    <div class="card prose">
+      <p>Diese Seite gibt es leider nicht (mehr). Vielleicht finden Sie hier, was Sie suchen:</p>
+      <ul>
+        <li><a href="/">Startseite</a></li>
+        <li><a href="/auftritte/">Auftritte</a></li>
+        <li><a href="/galerie/">Galerie</a></li>
+        <li><a href="/#Kontakt">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+</section>

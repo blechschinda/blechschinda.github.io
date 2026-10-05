@@ -1,38 +1,40 @@
-<footer id="footer" class="site-footer" itemscope="itemscope" itemtype="https://schema.org/WPFooter" role="contentinfo">
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="/media/logo/blechschinda-logo-300.webp" srcset="/media/logo/blechschinda-logo-300.webp 300w, /media/logo/blechschinda-logo-600.webp 600w" sizes="220px" width="300" height="94" alt="{{ site.title }}" loading="lazy">
+      <p>{{ site.tagline }}.</p>
+    </div>
 
-	<div id="footer-inner" class="clr">
+    <nav class="footer-col" aria-label="Seiten">
+      <h2 class="footer-title">Seiten</h2>
+      <ul>
+        <li><a href="/">Startseite</a></li>
+        <li><a href="/auftritte/">Auftritte</a></li>
+        <li><a href="/galerie/">Galerie</a></li>
+        <li><a href="/downloads/">Downloads</a></li>
+        <li><a href="/#Kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
 
-<div id="footer-widgets" class="oceanwp-row clr">
+    <div class="footer-col">
+      <h2 class="footer-title">Kontakt</h2>
+      <ul>
+        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        {%- for tel in site.kontakt.telefon %}
+        <li>{{ tel.name }}: <a href="tel:{{ tel.nummer }}">{{ tel.anzeige }}</a></li>
+        {%- endfor %}
+      </ul>
+      <ul class="social" aria-label="Social Media">
+        <li><a href="{{ site.facebook }}" target="_blank" rel="noopener noreferrer" aria-label="Facebook (öffnet in neuem Tab)">{% include icon.html name="facebook" %}</a></li>
+        <li><a href="{{ site.instagram }}" target="_blank" rel="noopener noreferrer" aria-label="Instagram (öffnet in neuem Tab)">{% include icon.html name="instagram" %}</a></li>
+      </ul>
+    </div>
+  </div>
 
-	<div class="footer-widgets-inner container">
-
-					<div class="footer-box span_1_of_4 col col-1">
-							</div><!-- .footer-one-box -->
-
-							<div class="footer-box span_1_of_4 col col-2">
-									</div><!-- .footer-one-box -->
-
-							<div class="footer-box span_1_of_4 col col-3 ">
-									</div><!-- .footer-one-box -->
-
-							<div class="footer-box span_1_of_4 col col-4">
-									</div><!-- .footer-box -->
-
-	</div><!-- .container -->
-
-</div><!-- #footer-widgets -->
-
-<div id="footer-bottom" class="clr no-footer-nav">
-
-	<div id="footer-bottom-inner" class="container clr">
-
-			<div id="copyright" class="clr" role="contentinfo">
-				© {{ site.time | date: '%Y' }} {{ site.title }}  ~  <a href="/impressum/">Impressum</a>  ~  <a href="/datenschutzerklarung/">Datenschutzerkl&auml;rung</a>			</div><!-- #copyright -->
-
-	</div><!-- #footer-bottom-inner -->
-
-</div><!-- #footer-bottom -->
-
-	</div><!-- #footer-inner -->
-
-</footer><!-- #footer -->
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© {{ site.time | date: '%Y' }} {{ site.title }}</span>
+      <span><a href="/impressum/">Impressum</a> · <a href="/datenschutzerklarung/">Datenschutzerklärung</a></span>
+    </div>
+  </div>
+</footer>

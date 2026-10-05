@@ -1,0 +1,165 @@
+# Gallery photos, shown in this order.
+# src: medium size for the grid; gross: largest size, opened in the lightbox.
+
+- src: /media/2021/11/120646753_176476110727196_3590993296472739115_n.webp
+  gross: /media/2021/11/120646753_176476110727196_3590993296472739115_n.webp
+  breite: 640
+  hoehe: 640
+  srcset: /media/2021/11/120646753_176476110727196_3590993296472739115_n-150x150.webp 150w, /media/2021/11/120646753_176476110727196_3590993296472739115_n-300x300.webp 300w, /media/2021/11/120646753_176476110727196_3590993296472739115_n.webp 640w
+
+- src: /media/2021/11/122894242_424530925606909_5967522656289550946_n.webp
+  gross: /media/2021/11/122894242_424530925606909_5967522656289550946_n.webp
+  breite: 640
+  hoehe: 640
+  srcset: /media/2021/11/122894242_424530925606909_5967522656289550946_n-150x150.webp 150w, /media/2021/11/122894242_424530925606909_5967522656289550946_n-300x300.webp 300w, /media/2021/11/122894242_424530925606909_5967522656289550946_n.webp 640w
+
+- src: /media/2022/04/AJE_8590-681x1024.webp
+  gross: /media/2022/04/AJE_8590-scaled.webp
+  breite: 681
+  hoehe: 1024
+  srcset: /media/2022/04/AJE_8590-200x300.webp 200w, /media/2022/04/AJE_8590-681x1024.webp 681w, /media/2022/04/AJE_8590-768x1154.webp 768w, /media/2022/04/AJE_8590-1022x1536.webp 1022w, /media/2022/04/AJE_8590-1363x2048.webp 1363w, /media/2022/04/AJE_8590-scaled.webp 1703w
+
+- src: /media/2022/04/12_Shooting-1024x681.webp
+  gross: /media/2022/04/12_Shooting-2048x1362.webp
+  breite: 1024
+  hoehe: 681
+  srcset: /media/2022/04/12_Shooting-300x200.webp 300w, /media/2022/04/12_Shooting-768x511.webp 768w, /media/2022/04/12_Shooting-1024x681.webp 1024w, /media/2022/04/12_Shooting-1536x1022.webp 1536w, /media/2022/04/12_Shooting-2048x1362.webp 2048w
+
+- src: /media/2022/04/9_Shooting-1024x682.webp
+  gross: /media/2022/04/9_Shooting-2048x1363.webp
+  breite: 1024
+  hoehe: 682
+  srcset: /media/2022/04/9_Shooting-300x200.webp 300w, /media/2022/04/9_Shooting-768x511.webp 768w, /media/2022/04/9_Shooting-1024x682.webp 1024w, /media/2022/04/9_Shooting-1536x1022.webp 1536w, /media/2022/04/9_Shooting-2048x1363.webp 2048w
+
+- src: /media/2022/04/10_Shooting-1024x681.webp
+  gross: /media/2022/04/10_Shooting-2048x1362.webp
+  breite: 1024
+  hoehe: 681
+  srcset: /media/2022/04/10_Shooting-300x200.webp 300w, /media/2022/04/10_Shooting-768x511.webp 768w, /media/2022/04/10_Shooting-1024x681.webp 1024w, /media/2022/04/10_Shooting-1536x1022.webp 1536w, /media/2022/04/10_Shooting-2048x1362.webp 2048w
+
+- src: /media/2022/10/IMG_6333-scaled-e1666201230844-1024x680.webp
+  gross: /media/2022/10/IMG_6333-scaled-e1666201230844-2048x1360.webp
+  breite: 1024
+  hoehe: 680
+  srcset: /media/2022/10/IMG_6333-scaled-e1666201230844-300x199.webp 300w, /media/2022/10/IMG_6333-scaled-e1666201230844-768x510.webp 768w, /media/2022/10/IMG_6333-scaled-e1666201230844-1024x680.webp 1024w, /media/2022/10/IMG_6333-scaled-e1666201230844-1536x1020.webp 1536w, /media/2022/10/IMG_6333-scaled-e1666201230844-2048x1360.webp 2048w
+
+- src: /media/2022/10/IMG_6171-scaled-e1666201701664-1024x730.webp
+  gross: /media/2022/10/IMG_6171-scaled-e1666201701664-2048x1459.webp
+  breite: 1024
+  hoehe: 730
+  srcset: /media/2022/10/IMG_6171-scaled-e1666201701664-300x214.webp 300w, /media/2022/10/IMG_6171-scaled-e1666201701664-768x547.webp 768w, /media/2022/10/IMG_6171-scaled-e1666201701664-1024x730.webp 1024w, /media/2022/10/IMG_6171-scaled-e1666201701664-1536x1094.webp 1536w, /media/2022/10/IMG_6171-scaled-e1666201701664-2048x1459.webp 2048w
+
+- src: /media/2022/10/34f1c98a-cd81-458f-b8e6-f3bf2873e86e-1024x768.webp
+  gross: /media/2022/10/34f1c98a-cd81-458f-b8e6-f3bf2873e86e.webp
+  breite: 1024
+  hoehe: 768
+  srcset: /media/2022/10/34f1c98a-cd81-458f-b8e6-f3bf2873e86e-300x225.webp 300w, /media/2022/10/34f1c98a-cd81-458f-b8e6-f3bf2873e86e-768x576.webp 768w, /media/2022/10/34f1c98a-cd81-458f-b8e6-f3bf2873e86e-1024x768.webp 1024w, /media/2022/10/34f1c98a-cd81-458f-b8e6-f3bf2873e86e-1536x1152.webp 1536w, /media/2022/10/34f1c98a-cd81-458f-b8e6-f3bf2873e86e.webp 1824w
+
+- src: /media/2022/04/265142f0-0175-469b-b8c4-fe17943f9c36-768x1024.webp
+  gross: /media/2022/04/265142f0-0175-469b-b8c4-fe17943f9c36.webp
+  breite: 768
+  hoehe: 1024
+  srcset: /media/2022/04/265142f0-0175-469b-b8c4-fe17943f9c36-225x300.webp 225w, /media/2022/04/265142f0-0175-469b-b8c4-fe17943f9c36-768x1024.webp 768w, /media/2022/04/265142f0-0175-469b-b8c4-fe17943f9c36-1152x1536.webp 1152w, /media/2022/04/265142f0-0175-469b-b8c4-fe17943f9c36.webp 1200w
+
+- src: /media/2022/10/IMG_6371-scaled-e1666201607283-1024x884.webp
+  gross: /media/2022/10/IMG_6371-scaled-e1666201607283.webp
+  breite: 1024
+  hoehe: 884
+  srcset: /media/2022/10/IMG_6371-scaled-e1666201607283-300x259.webp 300w, /media/2022/10/IMG_6371-scaled-e1666201607283-768x663.webp 768w, /media/2022/10/IMG_6371-scaled-e1666201607283-1024x884.webp 1024w, /media/2022/10/IMG_6371-scaled-e1666201607283-1536x1326.webp 1536w, /media/2022/10/IMG_6371-scaled-e1666201607283.webp 1920w
+
+- src: /media/2022/02/Y6A2944-1024x683.webp
+  gross: /media/2022/02/Y6A2944.webp
+  breite: 1024
+  hoehe: 683
+  srcset: /media/2022/02/Y6A2944-300x200.webp 300w, /media/2022/02/Y6A2944-768x512.webp 768w, /media/2022/02/Y6A2944-1024x683.webp 1024w, /media/2022/02/Y6A2944.webp 1500w
+  alt: Bleschinda_aufm_Bullog
+
+- src: /media/2022/04/Unbenannt-768x1024.webp
+  gross: /media/2022/04/Unbenannt-1536x2048.webp
+  breite: 768
+  hoehe: 1024
+  srcset: /media/2022/04/Unbenannt-225x300.webp 225w, /media/2022/04/Unbenannt-768x1024.webp 768w, /media/2022/04/Unbenannt-1152x1536.webp 1152w, /media/2022/04/Unbenannt-1536x2048.webp 1536w
+
+- src: /media/2022/04/a4e6c595-8aff-4784-98b8-94bbee2e99a6-768x1024.webp
+  gross: /media/2022/04/a4e6c595-8aff-4784-98b8-94bbee2e99a6.webp
+  breite: 768
+  hoehe: 1024
+  srcset: /media/2022/04/a4e6c595-8aff-4784-98b8-94bbee2e99a6-225x300.webp 225w, /media/2022/04/a4e6c595-8aff-4784-98b8-94bbee2e99a6-768x1024.webp 768w, /media/2022/04/a4e6c595-8aff-4784-98b8-94bbee2e99a6-1152x1536.webp 1152w, /media/2022/04/a4e6c595-8aff-4784-98b8-94bbee2e99a6.webp 1200w
+
+- src: /media/2022/04/cfb56466-cd5a-4b61-b24b-bdc1eb27c5fd-768x1024.webp
+  gross: /media/2022/04/cfb56466-cd5a-4b61-b24b-bdc1eb27c5fd.webp
+  breite: 768
+  hoehe: 1024
+  srcset: /media/2022/04/cfb56466-cd5a-4b61-b24b-bdc1eb27c5fd-225x300.webp 225w, /media/2022/04/cfb56466-cd5a-4b61-b24b-bdc1eb27c5fd-768x1024.webp 768w, /media/2022/04/cfb56466-cd5a-4b61-b24b-bdc1eb27c5fd-1152x1536.webp 1152w, /media/2022/04/cfb56466-cd5a-4b61-b24b-bdc1eb27c5fd.webp 1200w
+
+- src: /media/2022/10/7d468fe7-41e4-4711-9f15-220c906f9a07-e1666201298863-1024x675.webp
+  gross: /media/2022/10/7d468fe7-41e4-4711-9f15-220c906f9a07-e1666201298863.webp
+  breite: 1024
+  hoehe: 675
+  srcset: /media/2022/10/7d468fe7-41e4-4711-9f15-220c906f9a07-e1666201298863-300x198.webp 300w, /media/2022/10/7d468fe7-41e4-4711-9f15-220c906f9a07-e1666201298863-768x507.webp 768w, /media/2022/10/7d468fe7-41e4-4711-9f15-220c906f9a07-e1666201298863-1024x675.webp 1024w, /media/2022/10/7d468fe7-41e4-4711-9f15-220c906f9a07-e1666201298863.webp 1375w
+
+- src: /media/2022/04/IMG_9849-1024x683.webp
+  gross: /media/2022/04/IMG_9849.webp
+  breite: 1024
+  hoehe: 683
+  srcset: /media/2022/04/IMG_9849-300x200.webp 300w, /media/2022/04/IMG_9849-768x512.webp 768w, /media/2022/04/IMG_9849-1024x683.webp 1024w, /media/2022/04/IMG_9849-1536x1024.webp 1536w, /media/2022/04/IMG_9849.webp 1920w
+
+- src: /media/2022/04/a0f471b9-23b8-40ed-a1cb-b5ef745977af.webp
+  gross: /media/2022/04/a0f471b9-23b8-40ed-a1cb-b5ef745977af.webp
+  breite: 1024
+  hoehe: 768
+  srcset: /media/2022/04/a0f471b9-23b8-40ed-a1cb-b5ef745977af-300x225.webp 300w, /media/2022/04/a0f471b9-23b8-40ed-a1cb-b5ef745977af-768x576.webp 768w, /media/2022/04/a0f471b9-23b8-40ed-a1cb-b5ef745977af.webp 1024w
+
+- src: /media/2022/04/09_DSC_0942-1024x768.webp
+  gross: /media/2022/04/09_DSC_0942.webp
+  breite: 1024
+  hoehe: 768
+  srcset: /media/2022/04/09_DSC_0942-300x225.webp 300w, /media/2022/04/09_DSC_0942-768x576.webp 768w, /media/2022/04/09_DSC_0942-1024x768.webp 1024w, /media/2022/04/09_DSC_0942-1536x1152.webp 1536w, /media/2022/04/09_DSC_0942.webp 2016w
+
+- src: /media/2022/04/IMG_9805-e1657560120232-1024x914.webp
+  gross: /media/2022/04/IMG_9805-e1657560120232.webp
+  breite: 1024
+  hoehe: 914
+  srcset: /media/2022/04/IMG_9805-e1657560120232-300x268.webp 300w, /media/2022/04/IMG_9805-e1657560120232-768x686.webp 768w, /media/2022/04/IMG_9805-e1657560120232-1024x914.webp 1024w, /media/2022/04/IMG_9805-e1657560120232.webp 1435w
+
+- src: /media/2022/04/IMG_20210918_125149-768x1024.webp
+  gross: /media/2022/04/IMG_20210918_125149-scaled.webp
+  breite: 768
+  hoehe: 1024
+  srcset: /media/2022/04/IMG_20210918_125149-225x300.webp 225w, /media/2022/04/IMG_20210918_125149-768x1024.webp 768w, /media/2022/04/IMG_20210918_125149-1152x1536.webp 1152w, /media/2022/04/IMG_20210918_125149-1536x2048.webp 1536w, /media/2022/04/IMG_20210918_125149-scaled.webp 1920w
+
+- src: /media/2023/08/b877c6a5-8ae6-460e-88f7-d8db795ab333.webp
+  gross: /media/2023/08/b877c6a5-8ae6-460e-88f7-d8db795ab333.webp
+  breite: 996
+  hoehe: 1024
+  srcset: /media/2023/08/b877c6a5-8ae6-460e-88f7-d8db795ab333-292x300.webp 292w, /media/2023/08/b877c6a5-8ae6-460e-88f7-d8db795ab333-768x790.webp 768w, /media/2023/08/b877c6a5-8ae6-460e-88f7-d8db795ab333.webp 996w
+
+- src: /media/2023/08/7054a15d-0eeb-4550-a75c-97926114b168.webp
+  gross: /media/2023/08/7054a15d-0eeb-4550-a75c-97926114b168.webp
+  breite: 768
+  hoehe: 1024
+  srcset: /media/2023/08/7054a15d-0eeb-4550-a75c-97926114b168-225x300.webp 225w, /media/2023/08/7054a15d-0eeb-4550-a75c-97926114b168.webp 768w
+
+- src: /media/2023/08/b26dea52-d58b-4676-9a5b-3a9ef6210dd7-768x1024.webp
+  gross: /media/2023/08/b26dea52-d58b-4676-9a5b-3a9ef6210dd7.webp
+  breite: 768
+  hoehe: 1024
+  srcset: /media/2023/08/b26dea52-d58b-4676-9a5b-3a9ef6210dd7-225x300.webp 225w, /media/2023/08/b26dea52-d58b-4676-9a5b-3a9ef6210dd7-768x1024.webp 768w, /media/2023/08/b26dea52-d58b-4676-9a5b-3a9ef6210dd7-1152x1536.webp 1152w, /media/2023/08/b26dea52-d58b-4676-9a5b-3a9ef6210dd7.webp 1488w
+
+- src: /media/2023/08/IMG_6311-1024x768.webp
+  gross: /media/2023/08/IMG_6311.webp
+  breite: 1024
+  hoehe: 768
+  srcset: /media/2023/08/IMG_6311-300x225.webp 300w, /media/2023/08/IMG_6311-768x576.webp 768w, /media/2023/08/IMG_6311-1024x768.webp 1024w, /media/2023/08/IMG_6311-1536x1152.webp 1536w, /media/2023/08/IMG_6311.webp 2048w
+
+- src: /media/2023/08/b83c3137-349a-41df-98b4-90d02ff4b96d-e1692975806136.webp
+  gross: /media/2023/08/b83c3137-349a-41df-98b4-90d02ff4b96d-e1692975806136.webp
+  breite: 921
+  hoehe: 768
+  srcset: /media/2023/08/b83c3137-349a-41df-98b4-90d02ff4b96d-e1692975806136-300x250.webp 300w, /media/2023/08/b83c3137-349a-41df-98b4-90d02ff4b96d-e1692975806136-768x640.webp 768w, /media/2023/08/b83c3137-349a-41df-98b4-90d02ff4b96d-e1692975806136.webp 921w
+
+- src: /media/2023/08/8ae70b50-3f01-48cb-be5c-4b9acdc452ff-1024x484.webp
+  gross: /media/2023/08/8ae70b50-3f01-48cb-be5c-4b9acdc452ff.webp
+  breite: 1024
+  hoehe: 484
+  srcset: /media/2023/08/8ae70b50-3f01-48cb-be5c-4b9acdc452ff-300x142.webp 300w, /media/2023/08/8ae70b50-3f01-48cb-be5c-4b9acdc452ff-768x363.webp 768w, /media/2023/08/8ae70b50-3f01-48cb-be5c-4b9acdc452ff-1024x484.webp 1024w, /media/2023/08/8ae70b50-3f01-48cb-be5c-4b9acdc452ff-1536x727.webp 1536w, /media/2023/08/8ae70b50-3f01-48cb-be5c-4b9acdc452ff.webp 1600w

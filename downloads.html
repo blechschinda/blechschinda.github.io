@@ -1,0 +1,54 @@
+---
+title: Downloads
+description: Logo und Gruppenfotos der Blechschinda in hoher Auflösung zum Herunterladen – für Plakate, Programmhefte und Presse.
+permalink: /downloads/
+last_modified_at: 2026-10-05
+eyebrow: Presse & Veranstalter
+---
+{%- assign dl = site.data.downloads -%}
+{% include page-banner.html %}
+
+<section class="section">
+  <div class="container">
+    <div class="downloads-intro">
+      <p class="intro">Logo und Gruppenfotos in hoher Auflösung – für Plakate, Programmhefte, Vereinszeitungen und die Presse. Bitte nennen Sie bei Veröffentlichungen „Blechschinda“ als Quelle.</p>
+      <a class="btn btn-primary" href="{{ dl.paket }}" download>{% include icon.html name="download" %} Alles als ZIP</a>
+    </div>
+
+    <h2 class="downloads-title">Logo</h2>
+    <ul class="downloads-grid downloads-grid-logos">
+      {%- for f in dl.logos %}
+      <li class="download card">
+        <div class="download-preview preview-{{ f.hintergrund }}">
+          <img src="{{ f.vorschau }}" alt="Vorschau: {{ f.titel }}" loading="lazy">
+        </div>
+        <div class="download-body">
+          <div>
+            <h3>{{ f.titel }}</h3>
+            <p>{{ f.info }}</p>
+          </div>
+          <a class="download-btn" href="{{ f.datei }}" download aria-label="{{ f.titel }} herunterladen">{% include icon.html name="download" %}</a>
+        </div>
+      </li>
+      {%- endfor %}
+    </ul>
+
+    <h2 class="downloads-title">Gruppenfotos</h2>
+    <ul class="downloads-grid">
+      {%- for f in dl.gruppenfotos %}
+      <li class="download card">
+        <div class="download-preview">
+          <img src="{{ f.vorschau }}" alt="Gruppenfoto {{ forloop.index }} der Blechschinda" loading="lazy">
+        </div>
+        <div class="download-body">
+          <div>
+            <h3>Gruppenfoto {{ forloop.index }}</h3>
+            <p>{{ f.info }}</p>
+          </div>
+          <a class="download-btn" href="{{ f.datei }}" download aria-label="Gruppenfoto {{ forloop.index }} herunterladen">{% include icon.html name="download" %}</a>
+        </div>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>

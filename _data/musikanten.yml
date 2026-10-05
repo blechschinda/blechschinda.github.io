@@ -1,0 +1,73 @@
+# Musician cards on the home page, shown in this order.
+# Photos live in /media/musikanten/, named after the person:
+# bild: 800px photo; bild_klein: 400px version (used on phones).
+
+- name: Stefan Lehner
+  instrument: Flügelhorn
+  bild: /media/musikanten/stefan-lehner.webp
+  bild_klein: /media/musikanten/stefan-lehner-400.webp
+  text: >-
+    Als Mann am 1. Flügelhorn gibt unser „Strieze“ als musikalischer Leiter den Ton an. Darüber hinaus ist er in seiner Funktion als Schatzmeister für das Finanzielle zuständig. Immer mit einem flotten Spruch auf den Lippen sorgt er auch abseits der Bühne für gute Stimmung.
+
+- name: Johannes Huber
+  instrument: Flügelhorn
+  bild: /media/musikanten/johannes-huber.webp
+  bild_klein: /media/musikanten/johannes-huber-400.webp
+  text: >-
+    Unser Hannes bereichert die Gruppe nicht nur durch seine musikalischen Fähigkeiten am 2. Flügelhorn, sondern ist auch für die <a href="#Kontakt">Organisation</a> von Proben und Auftritten zuständig. Zudem sind dem handwerklichen Geschick unseres „Holzwurms“ auch unser Holztaferl und das Gruppenschild zu verdanken.
+
+- name: Martin Winderl
+  instrument: Trompete
+  bild: /media/musikanten/martin-winderl.webp
+  bild_klein: /media/musikanten/martin-winderl-400.webp
+  text: >-
+    Der „Youngster“ unserer Gruppe glänzt neben Spitzenleistungen an der Trompete auch in seiner Rolle als Social-Media-Beauftragter. Seine Lederhose ist ihm heilig – so heilig, dass er sogar damit eine Runde im Pool schwimmt.
+
+- name: Paul Selmer
+  instrument: Tuba
+  bild: /media/musikanten/paul-selmer.webp
+  bild_klein: /media/musikanten/paul-selmer-400.webp
+  text: >-
+    Eine Kapelle ohne Tuba ist wie ein Auto ohne Motor. So agiert unser Paul nicht nur musikalisch als Fundament der Blechschinda, sondern stellt auch organisatorisch eine unentbehrliche Basis dar. Neben der Moderation kümmert er sich als <a href="#Kontakt">Ansprechpartner</a> um Anfragen sowie die Organisation von Auftritten.
+
+- name: Johannes Lindner
+  instrument: Tenorhorn
+  bild: /media/musikanten/johannes-lindner.webp
+  bild_klein: /media/musikanten/johannes-lindner-400.webp
+  text: >-
+    Unser „Baritonkönig“ am Tenorhorn brilliert durch seine virtuosen Einlagen ein ums andere Mal. Sein musikalisches Feingefühl zeigt „JoLi“ auch in seinen Funktionen als musikalische Leitung und Notenwart. Zudem weiß er durch seine gekonnte Moderation das Publikum zu erfreuen.
+
+- name: Julia Huber
+  instrument: Bariton
+  bild: /media/musikanten/julia-huber.webp
+  bild_klein: /media/musikanten/julia-huber-400.webp
+  text: >-
+    Unsere „Jule“ ist nicht nur als Notenwart und regelmäßige Taxifahrerin unverzichtbar, sondern sorgt am Bariton auch für den Wohlklang im Hornregister. Stets mit einem Lächeln im Gesicht wertet sie zusammen mit den „Holzhexen“ neben dem Klang auch die Optik der Gruppe auf.
+
+- name: Katja Limmer
+  instrument: Klarinette
+  bild: /media/musikanten/katja-limmer.webp
+  bild_klein: /media/musikanten/katja-limmer-400.webp
+  text: >-
+    Was täte die Gruppe nur ohne unsere „Katl“? Mit flotten Einwürfen – musikalisch wie auch rhetorisch – sorgt sie an der 1. Klarinette für eine gute Harmonie in der Kapelle. Als mobile Apotheke versorgt sie uns im Notfall mit den nötigen Pillen gegen eine akute „Überhopfung“.
+
+- name: Christina Huber
+  instrument: Klarinette
+  bild: /media/musikanten/christina-huber.webp
+  bild_klein: /media/musikanten/christina-huber-400.webp
+  text: >-
+    Eine Klarinette kommt bekanntlich selten allein. Unsere Christina an der 2. Klarinette ist mit ihrer angenehmen Art der Ruhepol der Truppe. Mit flotten Fingern und stets einem humorvollen Spruch an der passenden Stelle ist sie für uns Blechschinda unersetzlich.
+
+- name: Simon Hofer
+  instrument: Posaune
+  bild: /media/musikanten/simon-hofer.webp
+  bild_klein: /media/musikanten/simon-hofer-400.webp
+  text: >-
+    Simon vervollständigt mit seiner Posaune unsere Rhythmusfraktion und sorgt für ein gewaltiges Klangvolumen – vor allem im Bass-Solo. Dabei bringt er mit brachialer Gewalt seinen Schalltrichter zum Glühen. Außerdem produziert er neben dem für die Blasmusik charakteristischen Nachschlag sogar seine eigenen Mundstücke.
+
+- name: Maximilian Kaiser
+  instrument: Schlagzeug
+  bild: /media/musikanten/maximilian-kaiser.webp
+  bild_klein: /media/musikanten/maximilian-kaiser-400.webp
+  text: >-
+    Am Schlagzeug sitzt unsere Rhythmusmaschine Max. Seine musikalische Leistung ist stets auf „kaiserlichem“ Niveau und so ist er aus unserer Gruppe nicht mehr wegzudenken. Bei seinem Können sind Noten überflüssig und so scheint es, als ob sein Notenständer nur dekorative Zwecke erfüllt.

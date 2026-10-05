@@ -7,64 +7,49 @@
 {%- assign canonical = page.url | replace: 'index.html', '' | absolute_url -%}
 {%- assign og_image = site.og_image | absolute_url -%}
 <head>
-	<meta charset="UTF-8">
-	<title>{{ page_title }}</title>
-
+<meta charset="UTF-8">
+<title>{{ page_title }}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="{{ page_description }}" />
+<meta name="description" content="{{ page_description }}">
+<meta name="theme-color" content="#023861">
 {%- if page.noindex %}
-<meta name="robots" content="noindex, follow" />
+<meta name="robots" content="noindex, follow">
 {%- else %}
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
-<link rel="canonical" href="{{ canonical }}" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="{{ canonical }}">
+<meta property="og:url" content="{{ canonical }}">
 {%- endif %}
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="{{ site.title }}" />
-<meta property="og:locale" content="de_DE" />
-<meta property="og:title" content="{{ page_title }}" />
-<meta property="og:description" content="{{ page_description }}" />
-{%- unless page.noindex %}
-<meta property="og:url" content="{{ canonical }}" />
-{%- endunless %}
-<meta property="og:image" content="{{ og_image }}" />
-<meta property="og:image:width" content="1536" />
-<meta property="og:image:height" content="1022" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="{{ page_title }}" />
-<meta name="twitter:description" content="{{ page_description }}" />
-<meta name="twitter:image" content="{{ og_image }}" />
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="{{ page_title }}">
+<meta property="og:description" content="{{ page_description }}">
+<meta property="og:image" content="{{ og_image }}">
+<meta property="og:image:width" content="1536">
+<meta property="og:image:height" content="1022">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page_title }}">
+<meta name="twitter:description" content="{{ page_description }}">
+<meta name="twitter:image" content="{{ og_image }}">
 {%- if page.url == '/' %}
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"MusicGroup","name":"{{ site.title }}",
 "url":"{{ '/' | absolute_url }}","genre":["Blasmusik","Bayerisch-böhmische Blasmusik","Volksmusik"],
 "logo":"{{ '/media/2021/08/cropped-Foto-30.12.20-20-24-22-768x234.webp' | absolute_url }}",
 "image":"{{ og_image }}",
-"description":"Bayerisch-böhmische Blasmusik aus Niederlindhart in flexibler Besetzung von 6 bis 10 Musikanten.",
-"email":"{{ site.email }}","telephone":"+4915153900418",
-"address":{"@type":"PostalAddress","streetAddress":"Niederlindhart 117","postalCode":"84066",
-"addressLocality":"Mallersdorf-Pfaffenberg","addressRegion":"Bayern","addressCountry":"DE"},
+"description":"Bayerisch-böhmische Blasmusik aus Niederbayern in flexibler Besetzung von 6 bis 10 Musikanten.",
+"email":"{{ site.email }}","telephone":"{{ site.kontakt.telefon[0].nummer }}",
+"address":{"@type":"PostalAddress","streetAddress":"{{ site.kontakt.strasse }}","postalCode":"{{ site.kontakt.plz }}",
+"addressLocality":"{{ site.kontakt.ort }}","addressRegion":"Bayern","addressCountry":"DE"},
 "sameAs":["{{ site.facebook }}","{{ site.instagram }}"]}
 </script>
 {%- endif %}
-<link rel='stylesheet' id='font-awesome-css' href='/assets/oceanwp/fonts/fontawesome/css/all.min.css' media='all' />
-<link rel='stylesheet' id='oceanwp-style-css' href='/assets/oceanwp/css/style.min.css' media='all' />
-<link rel='stylesheet' id='elementor-icons-css' href='/assets/elementor/lib/eicons/css/elementor-icons.min.css' media='all' />
-<link rel='stylesheet' id='elementor-frontend-css' href='/assets/elementor/css/frontend-lite.min.css' media='all' />
-<link rel='stylesheet' id='elementor-post-4-css' href='/assets/css/post-4.css' media='all' />
-{%- if page.elementor_css %}
-<link rel='stylesheet' id='elementor-post-{{ page.elementor_css }}-css' href='/assets/css/post-{{ page.elementor_css }}.css' media='all' />
-{%- endif %}
-<link rel='stylesheet' id='fonts-css' href='/assets/fonts/fonts.css' media='all' />
-<script src='/assets/js/jquery/jquery.min.js' id='jquery-core-js'></script>
-
-<link rel="icon" href="/media/2021/08/cropped-Blechschinda-Logo-32x32.png" sizes="32x32" />
-<link rel="icon" href="/media/2021/08/cropped-Blechschinda-Logo-192x192.png" sizes="192x192" />
-<link rel="apple-touch-icon" href="/media/2021/08/cropped-Blechschinda-Logo-180x180.png" />
-<meta name="msapplication-TileImage" content="/media/2021/08/cropped-Blechschinda-Logo-270x270.png" />
-{% include oceanwp-css.html %}
-{%- if page.head_style %}
-<style>
-{{ page.head_style }}</style>
-{%- endif %}
-<link rel="preload" href="/assets/fonts/roboto-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/assets/fonts/roboto-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/roboto-slab-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
+<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="icon" href="/media/2021/08/cropped-Blechschinda-Logo-32x32.png" sizes="32x32">
+<link rel="icon" href="/media/2021/08/cropped-Blechschinda-Logo-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/media/2021/08/cropped-Blechschinda-Logo-180x180.png">
+<meta name="msapplication-TileImage" content="/media/2021/08/cropped-Blechschinda-Logo-270x270.png">
 </head>

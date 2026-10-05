@@ -1,5 +1,5 @@
 title: Blechschinda
-tagline: Bayerisch-böhmische Blasmusik aus Niederlindhart
+tagline: Bayerisch-böhmische Blasmusik aus Niederbayern
 description: >-
   Die Blechschinda aus Niederlindhart spielen bayerisch-böhmische Blasmusik in
   flexibler Besetzung von 6 bis 10 Musikanten – auf Volksfesten, Festumzügen,
@@ -9,6 +9,18 @@ baseurl: ""
 lang: de
 
 email: info@blechschinda.de
+kontakt:
+  name: Paul Selmer
+  strasse: Niederlindhart 117
+  plz: "84066"
+  ort: Mallersdorf-Pfaffenberg
+  telefon:
+    - name: Paul
+      nummer: "+4915153900418"
+      anzeige: +49 151 53900418
+    - name: Hannes
+      nummer: "+4915757111344"
+      anzeige: +49 157 57111344
 facebook: https://www.facebook.com/Blechschinda
 instagram: https://www.instagram.com/blechschinda/
 og_image: /media/2022/04/AJE_9007-1536x1022.webp
@@ -30,5 +42,7 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - Dockerfile
+  - docker-compose.yml
   - vendor
   - node_modules

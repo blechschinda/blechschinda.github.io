@@ -1,0 +1,13 @@
+{%- comment -%}
+  Page title band. Uses page.banner as background photo when set.
+  Usage: {% include page-banner.html title="Auftritte" suffix="2026" %}
+{%- endcomment -%}
+<section class="page-banner{% if page.banner %} has-photo{% endif %}">
+  {%- if page.banner %}
+  <img class="page-banner-img" src="{{ page.banner }}" alt="" fetchpriority="high">
+  {%- endif %}
+  <div class="container page-banner-content">
+    {%- if page.eyebrow %}<p class="eyebrow eyebrow-gold">{{ page.eyebrow }}</p>{% endif %}
+    <h1>{{ include.title | default: page.title }}{% if include.suffix %} {{ include.suffix }}{% endif %}</h1>
+  </div>
+</section>
