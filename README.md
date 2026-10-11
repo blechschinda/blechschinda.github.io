@@ -52,8 +52,10 @@ entry per date:
     name: Maibaumaufstellen Sünching
 ```
 
-The visitor's browser marks past dates as "Vorbei" and highlights the next gig.
-Once every date has passed, a "Saison ist vorbei" note appears automatically.
+List them in date order. Based on the visitor's date, upcoming gigs are shown
+on top with the next one highlighted. Past gigs move into a collapsible
+"Vergangene Auftritte" section below, newest first. Once every date has passed,
+a "Saison ist vorbei" note appears and that section opens automatically.
 
 **Musicians:** edit `_data/musikanten.yml`. Each entry has a name, instrument,
 photo and text.

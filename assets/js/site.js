@@ -38,11 +38,16 @@
     });
   });
 
-  // Auftritte: mark past gigs and the next upcoming one (based on today's date in the browser)
+  // Auftritte: upcoming gigs stay on top (next one highlighted); past gigs move into the
+  // collapsible "Vergangene Auftritte" list below, newest first. Based on the browser's date.
+  var gigList = document.querySelector("[data-gigs]");
   var gigs = document.querySelectorAll("[data-gigs] [data-date]");
-  if (gigs.length) {
+  if (gigList && gigs.length) {
     var now = new Date();
     var today = now.getFullYear() + "-" + String(now.getMonth() + 1).padStart(2, "0") + "-" + String(now.getDate()).padStart(2, "0");
+    var past = document.querySelector("[data-gigs-past]");
+    var pastList = document.querySelector("[data-gigs-past-list]");
+    var pastCount = 0;
     var nextFound = false;
     gigs.forEach(function (gig) {
       var status = gig.querySelector("[data-gig-status]");
@@ -50,14 +55,25 @@
       if (date < today) {
         gig.classList.add("is-past");
         if (status) status.textContent = "Vorbei";
+        if (pastList) { pastList.insertBefore(gig, pastList.firstChild); pastCount++; }
       } else if (!nextFound) {
         nextFound = true;
         gig.classList.add("is-next");
         if (status) status.textContent = date === today ? "Heute" : "Als Nächstes";
       }
     });
-    var done = document.querySelector("[data-gigs-done]");
-    if (done && !nextFound) done.hidden = false;
+    if (past && pastCount) {
+      past.hidden = false;
+      var count = past.querySelector("[data-gigs-past-count]");
+      if (count) count.textContent = pastCount;
+    }
+    if (!nextFound) {
+      // Season over: no empty list on top, show the note and open the past gigs
+      gigList.hidden = true;
+      var done = document.querySelector("[data-gigs-done]");
+      if (done) done.hidden = false;
+      if (past) past.open = true;
+    }
   }
 
   // Galerie: lightbox

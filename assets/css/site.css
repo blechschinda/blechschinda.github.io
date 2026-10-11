@@ -417,6 +417,37 @@ p { margin: 0 0 1em; }
   .gig-status { display: none; }
 }
 
+.gigs[hidden] { display: none; }
+
+.gigs-past { margin: -1.5rem 0 3rem; }
+.gigs-past[hidden] { display: none; }
+.gigs-past summary {
+  display: flex; align-items: center; gap: .6rem;
+  width: fit-content;
+  padding: .7rem 1.1rem;
+  margin-bottom: .75rem;
+  border-radius: 999px;
+  background: rgb(255 255 255 / .7);
+  color: var(--navy); font-weight: 600;
+  cursor: pointer; list-style: none;
+  transition: background-color .2s;
+}
+.gigs-past summary::-webkit-details-marker { display: none; }
+.gigs-past summary::after {
+  content: ""; width: .5rem; height: .5rem; margin-left: .2rem;
+  border-right: 2px solid currentColor; border-bottom: 2px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform .2s;
+}
+.gigs-past[open] summary::after { transform: translateY(2px) rotate(-135deg); }
+.gigs-past summary:hover { background: #fff; }
+.gigs-past-count {
+  font-size: .8rem; font-weight: 700;
+  min-width: 1.6rem; padding: .1rem .45rem; border-radius: 999px; text-align: center;
+  background: var(--line); color: var(--muted);
+}
+.gigs-past .gigs { margin-bottom: 0; }
+
 .cta {
   display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.5rem;
   padding: 2rem;
