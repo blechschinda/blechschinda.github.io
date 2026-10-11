@@ -14,7 +14,7 @@ sitemap: false
 
 ## Auf einen Blick
 
-- Musikrichtung: bayerisch-böhmische Blasmusik
+- Musikrichtung: bayerisch-böhmische Blasmusik, aber auch einige moderne Hits
 - Besetzung: 6 bis 10 Musikanten (Flügelhorn, Trompete, Tenorhorn, Bariton, Tuba, Klarinette, Posaune, Schlagzeug), je nach Wunsch des Veranstalters
 - Anlässe: Hochzeiten, Geburtstage, Volksfeste, Vereinsfeste, Gründungsfeste, Festumzüge, Starkbierfeste, Maibaumaufstellen
 - Heimatort: Niederlindhart, 84066 Mallersdorf-Pfaffenberg, Landkreis Straubing-Bogen, Niederbayern
